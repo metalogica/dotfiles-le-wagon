@@ -52,7 +52,6 @@ export BUNDLER_EDITOR="'/Applications/Sublime Text.app/Contents/SharedSupport/bi
 export BUNDLER_EDITOR="subl $@ >/dev/null 2>&1 -a"
 export BUNDLER_EDITOR="'/Applications/Sublime Text.app/Contents/SharedSupport/bin/subl' -a"
 export BUNDLER_EDITOR="'/Applications/Sublime Text.app/Contents/SharedSupport/bin/subl' -a"
-<<<<<<< HEAD
 
 # data science additions
 # Load pyenv (To manage your Python versions)
@@ -134,6 +133,3 @@ alias k=kubectl
 # unity
 alias unity=/Applications/Unity/Hub/Editor/2019.4.5f1/Unity.app/Contents/MacOS/Unity
 
-=======
-export BUNDLER_EDITOR="subl $@ >/dev/null 2>&1 -a"
->>>>>>> 794a1215e21e1c4e264bf541f6b30cea0e80ee63
