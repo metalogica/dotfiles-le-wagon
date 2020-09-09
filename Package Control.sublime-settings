@@ -1,16 +1,37 @@
 {
-  "installed_packages":
-  [
-    "AdvancedNewFile",
-    "All Autocomplete",
-    "Babel",
-    "Emmet",
-    "ERB Snippets",
-    "Git",
-    "GitGutter",
-    "Package Control",
-    "SCSS",
-    "SublimeLinter",
-    "SublimeLinter-rubocop"
-  ]
+	"bootstrapped": true,
+	"in_process_packages":
+	[
+		"A File Icon",
+		"Emmet"
+	],
+	"installed_packages":
+	[
+		"A File Icon",
+		"AdvancedNewFile",
+		"All Autocomplete",
+		"Babel",
+		"Babel Snippets",
+		"Emmet",
+		"ERB Snippets",
+		"Git",
+		"GitGutter",
+		"Latest Migration",
+		"MagicPython",
+		"Material Theme",
+		"Package Control",
+		"React IDE",
+		"RuboCop",
+		"Rust Enhanced",
+		"RustFmt",
+		"SCSS",
+		"Solarized Color Scheme",
+		"Sublime ES7 React Redux ReactNative JS snippets",
+		"SublimeLinter",
+		"SublimeLinter-eslint",
+		"SublimeLinter-rubocop",
+		"Theme - Solarized Flat",
+		"Theme - Solarized Space",
+		"TOML"
+	]
 }
