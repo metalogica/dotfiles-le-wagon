@@ -133,3 +133,4 @@ alias k=kubectl
 # unity
 alias unity=/Applications/Unity/Hub/Editor/2019.4.5f1/Unity.app/Contents/MacOS/Unity
 
+export BUNDLER_EDITOR="'/Applications/Sublime Text.app/Contents/SharedSupport/bin/subl' -a"
