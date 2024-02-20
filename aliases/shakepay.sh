@@ -1,4 +1,8 @@
 #!/bin/bash
+alias sbw="shakepay_build_workspace"
+alias stag="create_shaketh_tag"
+alias snr="shakepay_npm_run"
+
 # simulators
 alias iossmall="react-native run-ios --scheme \"Shaketh Debug\" --configuration \"Debug\" --simulator \"iPhone SE (2nd generation)\""
 
@@ -64,6 +68,3 @@ alias qa2_reporting="AWS_VAULT_PROMPT=ykman aws-vault exec qa2 -- kdb reporting"
 
 alias kdr="kdb reporting"
 
-alias sbw="shakepay_build_workspace"
-
-alias stag="create_shaketh_tag"

@@ -68,3 +68,8 @@ function sj () {
 function stest() {
     DATABASE_URL=postgres://postgres:@127.0.0.1:5432/shakepay_test DATABASE_URL_READONLY=postgres://postgres:@127.0.0.1:5432/shakepay_test DATABASE_URL_REPORTING=postgres://postgres:@127.0.0.1:5432/shakepay_reporting_test DATABASE_URL_REPORTING_READONLY=postgres://postgres:@127.0.0.1:5432/shakepay_reporting_test DATABASE_URL_MIGRATIONS=postgres://postgres:@127.0.0.1:5432/shakepay_test APP_TYPE=shakeboard LIGHTSHIP_PORT=5005 NODE_ENV=test TS_NODE_TRANSPILE_ONLY=true npx -w apps/backend mocha --config /Users/richardjarram/code/shakepay/shake-hosted-wallet/apps/backend/.mocharc.dev.json `echo "$1"`
 }
+
+
+function shakepay_npm_run() {
+    npm run -w "$@"
+}
