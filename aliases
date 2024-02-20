@@ -100,3 +100,5 @@ alias jn="jupyter notebook"
 
 # llama index cache
 LLAMA_INDEX_CACHE_DIR="~/.llama-index-cache"
+
+#foo

@@ -18,12 +18,12 @@ ZSH_THEME="powerlevel10k/powerlevel10k"
 # Useful plugins for zsh
 plugins=(
   gitfast
-  last-working-dir 
-  common-aliases 
+  last-working-dir
+  common-aliases
   sublime
-  zsh-syntax-highlighting 
-  history-substring-search 
-  docker 
+  zsh-syntax-highlighting
+  history-substring-search
+  docker
   docker-compose
   wd
   # zsh-autosuggestions
@@ -77,7 +77,7 @@ type -a pyenv > /dev/null && eval "$(pyenv init -)" && eval "$(pyenv virtualenv-
 # Load 'lewagon' virtualenv for the Data Bootcamp. You can comment these 2 lines to disable this behavior.
 export PYENV_VIRTUALENV_DISABLE_PROMPT=1
 # activate le wagon python environment
-pyenv activate le-wagon 2>/dev/null # && echo "🐍 Loading 'lewagon' virtualenv"
+pyenv activate lewagon 2>/dev/null # && echo "🐍 Loading 'lewagon' virtualenv"
 eval "$(pyenv virtualenv-init -)"
 
 # Rust Paths
@@ -156,6 +156,7 @@ export RETOOL_DIR="/Users/richardjarram/code/shakepay/retool"
 #unset __conda_setup
 # <<< conda initialize <<<
 
+# test
 
 # The next line updates PATH for the Google Cloud SDK.
 if [ -f '/opt/homebrew/share/google-cloud-sdk/path.zsh.inc' ]; then . '/opt/homebrew/share/google-cloud-sdk/path.zsh.inc'; fi
