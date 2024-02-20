@@ -3,10 +3,14 @@
 alias iossmall="react-native run-ios --scheme \"Shaketh Debug\" --configuration \"Debug\" --simulator \"iPhone SE (2nd generation)\""
 
 # run a single test
-stest() { DATABASE_URL=postgres://postgres:@127.0.0.1:5432/shakepay_test DATABASE_URL_READONLY=postgres://postgres:@127.0.0.1:5432/shakepay_test DATABASE_URL_REPORTING=postgres://postgres:@127.0.0.1:5432/shakepay_reporting_test DATABASE_URL_REPORTING_READONLY=postgres://postgres:@127.0.0.1:5432/shakepay_reporting_test DATABASE_URL_MIGRATIONS=postgres://postgres:@127.0.0.1:5432/shakepay_test APP_TYPE=shakeboard LIGHTSHIP_PORT=5005 NODE_ENV=test TS_NODE_TRANSPILE_ONLY=true npx -w apps/backend mocha --config /Users/richardjarram/code/shakepay/shake-hosted-wallet/apps/backend/.mocharc.dev.json `echo "$1"` } #| sed 's/apps\/backend\///'`}
+stest() {
+    DATABASE_URL=postgres://postgres:@127.0.0.1:5432/shakepay_test DATABASE_URL_READONLY=postgres://postgres:@127.0.0.1:5432/shakepay_test DATABASE_URL_REPORTING=postgres://postgres:@127.0.0.1:5432/shakepay_reporting_test DATABASE_URL_REPORTING_READONLY=postgres://postgres:@127.0.0.1:5432/shakepay_reporting_test DATABASE_URL_MIGRATIONS=postgres://postgres:@127.0.0.1:5432/shakepay_test APP_TYPE=shakeboard LIGHTSHIP_PORT=5005 NODE_ENV=test TS_NODE_TRANSPILE_ONLY=true npx -w apps/backend mocha --config /Users/richardjarram/code/shakepay/shake-hosted-wallet/apps/backend/.mocharc.dev.json `echo "$1"`
+}
 
 # run devtest in test container
-devtest() { DATABASE_URL=postgres://postgres:@127.0.0.1:5432/shakepay_test DATABASE_URL_READONLY=postgres://postgres:@127.0.0.1:5432/shakepay_test DATABASE_URL_REPORTING=postgres://postgres:@127.0.0.1:5432/shakepay_reporting_test DATABASE_URL_REPORTING_READONLY=postgres://postgres:@127.0.0.1:5432/shakepay_reporting_test DATABASE_URL_MIGRATIONS=postgres://postgres:@127.0.0.1:5432/shakepay_test APP_TYPE=shakeboard LIGHTSHIP_PORT=5005 NODE_ENV=test npm run -w apps/backend devmocha }
+devtest() {
+    DATABASE_URL=postgres://postgres:@127.0.0.1:5432/shakepay_test DATABASE_URL_READONLY=postgres://postgres:@127.0.0.1:5432/shakepay_test DATABASE_URL_REPORTING=postgres://postgres:@127.0.0.1:5432/shakepay_reporting_test DATABASE_URL_REPORTING_READONLY=postgres://postgres:@127.0.0.1:5432/shakepay_reporting_test DATABASE_URL_MIGRATIONS=postgres://postgres:@127.0.0.1:5432/shakepay_test APP_TYPE=shakeboard LIGHTSHIP_PORT=5005 NODE_ENV=test npm run -w apps/backend devmocha
+}
 
 # run dev test in container (2)
 alias stestfull="docker-compose -f /Users/richardjarram/code/shakepay/shake-hosted-wallet/docker-compose.test.yml run test"
