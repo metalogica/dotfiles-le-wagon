@@ -1,7 +1,7 @@
 #!/bin/bash
 alias sbw="shakepay_build_workspace"
-alias stag="create_shaketh_tag"
 alias snr="shakepay_npm_run"
+alias stag="create_shaketh_tag"
 
 # simulators
 alias iossmall="react-native run-ios --scheme \"Shaketh Debug\" --configuration \"Debug\" --simulator \"iPhone SE (2nd generation)\""
