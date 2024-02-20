@@ -1,3 +1,7 @@
+#!/bin/bash
+source "$DOTFILES_DIR/aliases/personal.sh"
+source "$DOTFILES_DIR/aliases/shakepay.sh"
+
 # Get External IP / local IPs
 alias ip="curl ipinfo.io/ip"
 alias ips="ifconfig -a | perl -nle'/(\d+\.\d+\.\d+\.\d+)/ && print $1'"
@@ -57,9 +61,6 @@ alias doco="docker compose"
 
 # Jupyter Notebook
 alias jt="jupyter notebook"
-
-# shakepay specific aliases
-source ~/.config/shakepay/aliases
 
 # dharma taylor
 alias dharmataylor="ssh -i \"dharmataylor.pem\" ubuntu@ec2-18-130-97-77.eu-west-2.compute.amazonaws.com"

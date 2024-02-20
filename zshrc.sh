@@ -1,6 +1,10 @@
 #!/bin/zsh
-# env vars
+# env vars must be set first to prevent rc script from failing
 source "$HOME/code/metalogica/dotfiles/env/index.sh"
+source "$DOTFILES_DIR/aliases"
+
+# Store your own aliases in the ~/.aliases file and load the here.
+source "$DOTFILES_DIR/aliases/index.sh"
 
 # Enable Powerlevel10k instant prompt. Should stay close to the top of ~/.zshrc.
 # Initialization code that may require console input (password prompts, [y/n]
@@ -60,9 +64,6 @@ export PATH="${PATH}:/usr/local/opt/krb5/bin:/usr/local/opt/krb5/sbin"
 export LDFLAGS="-L/usr/local/opt/krb5/lib"
 export CPPFLAGS="-I/usr/local/opt/krb5/include"
 export PKG_CONFIG_PATH="/usr/local/opt/krb5/lib/pkgconfig"
-
-# Store your own aliases in the ~/.aliases file and load the here.
-[[ -f "$HOME/.aliases" ]] && source "$HOME/.aliases"
 
 # Encoding stuff for the terminal
 export LANG=en_US.UTF-8
