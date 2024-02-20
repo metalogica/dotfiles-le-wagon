@@ -1,9 +1,7 @@
 #!/bin/zsh
 # env vars must be set first to prevent rc script from failing
 source "$HOME/code/metalogica/dotfiles/env/index.sh"
-source "$DOTFILES_DIR/aliases"
-
-# Store your own aliases in the ~/.aliases file and load the here.
+source "$DOTFILES_DIR/functions/index.sh"
 source "$DOTFILES_DIR/aliases/index.sh"
 
 # Enable Powerlevel10k instant prompt. Should stay close to the top of ~/.zshrc.

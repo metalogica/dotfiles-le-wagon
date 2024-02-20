@@ -1,5 +1,5 @@
 #!/bin/bash
-source "$DOTFILES_DIR/aliases/personal.sh"
+source "$DOTFILES_DIR/aliases/user.sh"
 source "$DOTFILES_DIR/aliases/shakepay.sh"
 
 # Get External IP / local IPs

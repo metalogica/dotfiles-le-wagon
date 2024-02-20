@@ -1,5 +1,4 @@
 #!/bin/bash
-
 download() {
     local url=""
     local filename=""
