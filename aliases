@@ -2,9 +2,6 @@
 alias ip="curl ipinfo.io/ip"
 alias ips="ifconfig -a | perl -nle'/(\d+\.\d+\.\d+\.\d+)/ && print $1'"
 alias speedtest="wget -O /dev/null http://speedtest.wdc01.softlayer.com/downloads/test10.zip"
-export SHAKEPAY="/Users/richardjarram/code/shakepay"
-export CODE="/Users/richardjarram/code"
-export GTD="/Users/richardjarram/Documents/GTD"
 
 # BTC Core and Electrum
 alias electrum="open -n /Applications/Electrum.app --args --testnet"
@@ -22,7 +19,7 @@ alias conf="nv +':@c'"
 # Git
 ## git pull origin master
 alias gpo="/opt/homebrew/bin/git pull origin"
-## git push 
+## git push
 alias gp="/opt/homebrew/bin/git push"
 ## git add
 alias ga="/opt/homebrew/bin/git add"
@@ -38,7 +35,7 @@ alias gsh="/opt/homebrew/bin/git stash"
 alias gr="/opt/homebrew/bin/git restore"
 # git line stats
 alias gs="/opt/homebrew/bin/git diff --stat origin/master HEAD"
-## git commit 
+## git commit
 gc () { '/opt/homebrew/bin/git' commit -m "$1" }
 ## git push origin upstream
 gpu () { git push origin -u `() { git rev-parse --abbrev-ref HEAD }` }
@@ -64,17 +61,10 @@ alias jt="jupyter notebook"
 # shakepay specific aliases
 source ~/.config/shakepay/aliases
 
-#unity
-export UNITY='/Users/richardjarram/Documents/unity/'
-
-# cheatsheets
-export CHEATS="/Users/richardjarram/code/cheatsheets"
-export RETOOL_DIR="/Users/richardjarram/code/shakepay/retool"
-
 # dharma taylor
 alias dharmataylor="ssh -i \"dharmataylor.pem\" ubuntu@ec2-18-130-97-77.eu-west-2.compute.amazonaws.com"
 
-# supabase 
+# supabase
 alias supa="/opt/homebrew/bin/supabase"
 
 # custom scripts
@@ -85,10 +75,10 @@ alias GTD="/Users/richardjarram/Documents/GTD"
 
 # functions
 convert_to_webp() {
-  input_file="$1"
-  output_file="${input_file%.*}.webp"
-
-  cwebp -q 50 "$input_file" -o "$output_file"
+    input_file="$1"
+    output_file="${input_file%.*}.webp"
+    
+    cwebp -q 50 "$input_file" -o "$output_file"
 }
 
 # npm
@@ -97,8 +87,3 @@ alias nrw="npm run -w"
 
 # jupyter
 alias jn="jupyter notebook"
-
-# llama index cache
-LLAMA_INDEX_CACHE_DIR="~/.llama-index-cache"
-
-#foo
