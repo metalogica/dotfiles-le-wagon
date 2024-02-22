@@ -28,7 +28,7 @@ alias gw="git for-each-ref --sort=committerdate refs/heads/"
 # delete branch
 alias gdel="git branch --delete -D"
 # switch to master branch
-alias ma="git co master"
+alias gma="git co master"
 # switch to previous branch
 alias gsw="git switch -"
 ## git commit
