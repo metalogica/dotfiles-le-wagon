@@ -38,7 +38,7 @@ compress_mov() {
 
 get_last_commit_url() {
     if [ -n "$1" ]; then
-        cd "$1" || exit 1 # Exit if the directory does not exist
+        cd "$1" || exit 1
     fi
     
     last_commit_hash=$(git log -1 --format="%H")
@@ -54,5 +54,5 @@ get_last_commit_url() {
     
     echo -n "$formatted_url" | pbcopy;
     
-    echo "🪄 [$url] copied to clipboard! 📋"
+    printf "🪄 Copied to clipboard! 📋\n$url"
 }
