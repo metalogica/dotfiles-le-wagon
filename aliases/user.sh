@@ -39,3 +39,5 @@ gc () {
 gpu () {
     git push origin -u `() { git rev-parse --abbrev-ref HEAD }`
 }
+## get last commit url
+alias gurl="get_last_commit_url"

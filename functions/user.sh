@@ -35,3 +35,22 @@ compress_mov() {
     
     echo "Output saved to $output_path"
 }
+
+get_last_commit_url() {
+    if [ -n "$1" ]; then
+        cd "$1" || exit 1 # Exit if the directory does not exist
+    fi
+    
+    last_commit_hash=$(git log -1 --format="%H")
+    
+    if [ -z "$last_commit_hash" ]; then
+        echo "Failed to retrieve the last commit hash."
+        exit 1
+    fi
+    
+    url="https://github.com/shakepay/shake-hosted-wallet/pull/7486/commits/$last_commit_hash"
+    
+    echo -n "$url" | pbcopy;
+    
+    echo "$url copied to clipboard 📋"
+}
