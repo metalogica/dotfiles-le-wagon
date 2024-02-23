@@ -49,8 +49,10 @@ get_last_commit_url() {
     fi
     
     url="https://github.com/shakepay/shake-hosted-wallet/pull/7486/commits/$last_commit_hash"
+
+    formatted_url="[$last_commit_hash]($formatted_url)"
     
-    echo -n "$url" | pbcopy;
+    echo -n "$formatted_url" | pbcopy;
     
-    echo "$url copied to clipboard 📋"
+    echo "🪄 [$url] copied to clipboard! 📋"
 }
