@@ -18,3 +18,20 @@ download() {
     
     curl -s "$url" | lynx -dump -stdin > "$filename"
 }
+
+compress_mov() {
+    if [ "$#" -ne 1 ]; then
+        echo "Usage: $0 path_to_mov"
+        exit 1
+    fi
+    
+    input_path="$1"
+    dir_path=$(dirname "$input_path")
+    file_name=$(basename "$input_path" .mov)
+    
+    output_path="${dir_path}/${file_name}.mp4"
+    
+    ffmpeg -i "$input_path" -vcodec libx264 -crf 28  "$output_path"
+    
+    echo "Output saved to $output_path"
+}
