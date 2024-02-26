@@ -4,6 +4,10 @@ source "$HOME/code/metalogica/dotfiles/env/index.sh"
 source "$DOTFILES_DIR/functions/index.sh"
 source "$DOTFILES_DIR/aliases/index.sh"
 
+# shakepay devops-tools setup
+# redundant because im using these directly in the env/shakepay dir
+# source ~/.config/shakepay/devops-tools
+
 # Enable Powerlevel10k instant prompt. Should stay close to the top of ~/.zshrc.
 # Initialization code that may require console input (password prompts, [y/n]
 # confirmations, etc.) must go above this block; everything else may go below.
@@ -125,8 +129,6 @@ alias k=kubectl
 
 export BUNDLER_EDITOR="'/Applications/Sublime Text.app/Contents/SharedSupport/bin/subl' -a"
 
-# shakepay devops-tools setup
-source ~/.config/shakepay/devops-tools
 export PATH="/opt/homebrew/opt/openssl@1.1/bin:$PATH"
 export PATH="/Library/Frameworks/Mono.framework/Versions/Current/Commands/mono:$PATH"
 

@@ -41,3 +41,5 @@ gpu () {
 }
 ## get last commit url
 alias gurl="get_last_commit_url"
+
+alias sdb="shakepay_connect_db"
