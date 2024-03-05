@@ -67,5 +67,6 @@ alias qa2_main="AWS_VAULT_PROMPT=ykman aws-vault exec qa2 -- kdb"
 alias qa2_reporting="AWS_VAULT_PROMPT=ykman aws-vault exec qa2 -- kdb reporting"
 
 alias kdr="kdb reporting"
+alias sds="shakepay_direct_deposits_sftp"
 
 alias shakpay_devops_tools="/Users/richardjarram/code/shakepay/devops-tools"

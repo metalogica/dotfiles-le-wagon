@@ -47,8 +47,8 @@
 [branch "master"]
   mergeoptions = --no-edit
 [user]
-	email = rjarram@me.com
-	name = richard jarram
+	email = 43706901+metalogica@users.noreply.github.com
+	name = Richard Jarram
 	signingkey = ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIPNb+bBMlRWA786r7DMlI5MyKBTL/az2ubbMzW10+dY/
 [gpg]
 	format = ssh
@@ -56,3 +56,8 @@
 	program = /Applications/1Password.app/Contents/MacOS/op-ssh-sign
 [commit]
 	gpgsign = true
+[filter "lfs"]
+	process = git-lfs filter-process
+	required = true
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
