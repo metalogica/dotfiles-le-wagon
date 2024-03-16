@@ -114,6 +114,7 @@ export NVM_DIR="$HOME/.nvm"
 
 # open ssl 1.1
 export PATH="${PATH}:/usr/local/opt/openssl@1.1/bin"
+export PATH="/opt/homebrew/opt/llvm/bin:$PATH"
 export LDFLAGS="-L/opt/homebrew/lib"; export CPPFLAGS="-I/opt/homebrew/include"
 
 # FLAGS
