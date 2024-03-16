@@ -89,9 +89,9 @@ eval "$(pyenv virtualenv-init -)"
 
 # Rust Paths
 export CARGO_HOME=/Users/richardjarram/.cargo/bin
-source $HOME/.cargo/env
-# export RUSTUP_HOME=/Users/richardjarram/.rustup
-# export PATH="${PATH}:/Users/richardjarram/.cargo/bin"
+# source $HOME/.cargo/env
+export RUSTUP_HOME=/Users/richardjarram/.rustup
+export PATH="${PATH}:/Users/richardjarram/.cargo/bin"
 
 # cpp config
 export CPP_PACKAGES="/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include"
