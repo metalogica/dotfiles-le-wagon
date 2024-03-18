@@ -48,9 +48,9 @@ alias ddqa2="sftp -i ~/.ssh/shakepay-qa-pt-sftp-private-key ptrust@s-97a60984a87
 alias listsecrets="aws secretsmanager list-secrets"
 
 # direnv
-alias envqa="export DEV_ENV=QA; direnv allow $(pwd)"
-alias envqa2="export DEV_ENV=QA2; direnv allow $(pwd)"
-alias envtest="export DEV_ENV=test; direnv allow $(pwd)"
+alias envqa="export DB_ENV=qa; direnv allow $(pwd)"
+alias envqa2="export DB_ENV=qa2; direnv allow $(pwd)"
+alias envtest="export DB_ENV=test; direnv allow $(pwd)"
 
 alias pqa="git push origin head:qa -f"
 alias pqa2="git push origin head:qa2 -f"
