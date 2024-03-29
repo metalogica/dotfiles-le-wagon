@@ -22,7 +22,7 @@ alias gsh="/opt/homebrew/bin/git stash"
 ## git restore
 alias gr="/opt/homebrew/bin/git restore"
 # git line stats
-alias gs="/opt/homebrew/bin/git diff --stat origin/master HEAD"
+alias gt="/opt/homebrew/bin/git diff --stat origin/master HEAD"
 # show mostrcent working branches
 alias gw="git for-each-ref --sort=committerdate refs/heads/"
 # delete branch
