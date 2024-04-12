@@ -36,6 +36,19 @@ compress_mov() {
     echo "Output saved to $output_path"
 }
 
+compress_pdf() {
+    original_file_path="$1"
+    output_file_path="${original_file_path%.pdf}_compressed.pdf"
+    
+    /opt/homebrew/bin/gs -sDEVICE=pdfwrite -dCompatibilityLevel=1.5 \
+    -dPDFSETTINGS=/screen \
+    -dColorImageResolution=100 -dColorImageDownsampleType=/Bicubic \
+    -dGrayImageResolution=100 -dGrayImageDownsampleType=/Bicubic \
+    -dMonoImageResolution=100 -dMonoImageDownsampleType=/Subsample \
+    -dNOPAUSE -dBATCH \
+    -sOutputFile="$output_file_path" "$original_file_path"
+}
+
 get_last_commit_url() {
     if [ -n "$1" ]; then
         cd "$1" || exit 1
