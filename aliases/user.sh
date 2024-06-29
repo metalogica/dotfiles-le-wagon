@@ -46,3 +46,5 @@ alias gurl="get_last_commit_url"
 alias sdb="shakepay_connect_db"
 
 alias gfo="git fetch origin"
+
+alias compress_img="npx optimizt --webp"
